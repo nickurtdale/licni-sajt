@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lični sajt</title>
+  <meta charset="UTF-8">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		function update(e){
+  var x = e.clientX || e.touches[0].clientX
+  var y = e.clientY || e.touches[0].clientY
+
+  document.documentElement.style.setProperty('--cursorX', x + 'px')
+  document.documentElement.style.setProperty('--cursorY', y + 'px')
+}
+
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
+	</script>
+ 
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+  <div class="background"></div>
+  
+	
+  <div id="div_left">
+  
+    <h1>Ime i Prezime</h1>
+    <h2>Zanimanje<br>
+	<span>Školovao se na <a href="https://www.elskolapd.com/" target="_blank">ime škole (npr. elektrotenička)</a> u <br> <a target="_blank" href="https://www.google.com/maps/place/Elektrotehni%C4%8Dka+%C5%A1kola/@44.9761632,16.7074107,18.59z/data=!4m6!3m5!1s0x476733527e3c0bed:0x46f6a4eb2d5166d9!8m2!3d44.976349!4d16.708462!16s%2Fg%2F11b6msn4gt?entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D">
+	ime grada (npr. Prijedor)
+	</a>
+	<span>
+	</h2>
+    <p>Dodatni opis</p>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+  <ul class="nav navbar-nav" id="nav_list">
+    <li><a href="o meni.html">O meni</a></li>
+	<li><a href="projekti.html">Projekti</a></li>
+    <li><a href="iskustvo.html">Iskustvo</a></li>
+</nav>
+	<div id="links">
+	<a href="#" target="_blank"  class="tooltip"> <img src="resources/github.png" alt="github"> <span class="tooltiptext">GitHub</span> </a>
+	<a href="#" target="_blank"  class="tooltip"><img src="resources/linkedin.png" alt="linkedin"><span class="tooltiptext">LinkedIn</span></a>
+	<a href="#" target="_blank"  class="tooltip"><img src="resources/instagram.png" alt="instagram"><span class="tooltiptext">Instagram</span></a>
+	<a href="#" target="_blank"  class="tooltip"><img src="resources/mail.png" alt="mail"><span class="tooltiptext">Mail</span></a>
+	
+    </div>
+	
+  </div>
+</body>
+
+</html>

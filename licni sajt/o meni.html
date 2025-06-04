@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>O meni</title>
+  <meta charset="UTF-8">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		function update(e){
+  var x = e.clientX || e.touches[0].clientX
+  var y = e.clientY || e.touches[0].clientY
+
+  document.documentElement.style.setProperty('--cursorX', x + 'px')
+  document.documentElement.style.setProperty('--cursorY', y + 'px')
+}
+
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
+	</script>
+ 
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+  <div class="background"></div>
+  
+	<div id="div_main">
+	
+		<h2 id="about">O meni</h2>
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare, tellus sed euismod gravida, quam elit molestie magna,
+	  ac sollicitudin felis diam ac elit. Sed viverra nisi eget dolor consequat luctus. Ut eget luctus ipsum. Vestibulum a sagittis magna. Curabitur
+	  tempus tristique nisl, vel commodo nibh dignissim eleifend. Praesent posuere turpis non facilisis tempor. Maecenas tincidunt ligula ut diam facilisis 
+	  convallis. Suspendisse at ex arcu. Suspendisse potenti. Donec eu diam a ante ornare rutrum eu a lacus. Donec aliquet elit vitae urna tristique semper.
+	  Donec id leo nec quam faucibus bibendum.
+
+	  </p>
+	  
+    </div>
+  
+  <div id="div_left">
+  
+    
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+  <ul class="nav navbar-nav" id="nav_list">
+    <li><a href="index.html">Početna</a></li>
+	<li><a href="projekti.html">Projekti</a></li>
+    <li><a href="iskustvo.html">Iskustvo</a></li>
+</nav>
+	<div id="links">
+	<a href="#" target="_blank"  class="tooltip"> <img src="resources/github.png" alt="github"> <span class="tooltiptext">GitHub</span> </a>
+	<a href="#" target="_blank"  class="tooltip"><img src="resources/linkedin.png" alt="linkedin"><span class="tooltiptext">LinkedIn</span></a>
+	<a href="#" target="_blank"  class="tooltip"><img src="resources/instagram.png" alt="instagram"><span class="tooltiptext">Instagram</span></a>
+	<a href="#" target="_blank"  class="tooltip"><img src="resources/mail.png" alt="mail"><span class="tooltiptext">Mail</span></a>
+	
+    </div>
+	
+  </div>
+</body>
+
+</html>

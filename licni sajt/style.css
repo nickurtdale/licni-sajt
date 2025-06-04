@@ -1,0 +1,134 @@
+:root {
+  
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+}
+
+body {
+	  font-size: 100%;
+      margin: 0;
+      height: 100vh;
+      background-image: url("resources/digitalRain.gif");
+      overflow: hidden;
+      
+    }
+
+h1, h2, h3, p {
+  color: #008000;
+  background: black no-repeat center center/cover;
+}
+
+h1 {
+  font-size: 6em;
+  margin: 0.67em 0 0;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0.2em 0 0;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+span {
+	font-size: 0.5em;
+	opacity: 0.5;
+}
+
+span a {
+	text-decoration: underline;
+    color: #008000;
+    font-weight: bold;
+}
+
+img {
+  display: inline-block;
+  width: 4.5vw;
+  height: 9vh;
+  border-radius: 30%;
+  background: black no-repeat center center/cover;
+}
+
+#div_main {
+  display: inline-block;
+  height: 90vh;
+  width: 50vw;
+  position: relative;
+  left: 50vw;
+  padding: 5vh 0;
+  overflow: auto;
+  opacity: 0.7;
+  background: black no-repeat center center/cover;
+}
+
+#nav_list a {
+  text-decoration: none;
+  color: #008000;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#nav_list {
+  display: inline-block;
+  background: black no-repeat center center/cover;
+  padding-top: 5vh;
+}
+
+#links {
+  display: inline-block;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#div_left {
+  display: inline-block;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  opacity: 0.9;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #008000;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 1.5em;
+ 
+  
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
